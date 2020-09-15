@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercitazione di Alberto Pertusi</title>
+  </head>
+  <body>
+    <main class="container">
+      <form action="dummy.php" id="submit-form">
+        <section>
+          <label for="nome">Nome</label>
+          <input type="text" maxlength="25" id="nome" name="nome" />
+        </section>
+        <section>
+          <label for="cognome">Cognome</label>
+          <input type="text" maxlength="30" id="cognome" name="cognome" />
+        </section>
+        <section>
+          <label for="matricola">Matricola</label>
+          <input type="text" maxlength="8" id="matricola" name="matricola" />
+        </section>
+        <section>
+          <label for="data-di-nascita">Data di Nascita</label>
+          <input type="date" id="data-di-nascita" name="data-di-nascita" />
+        </section>
+        <section>
+          <label for="regione-di-nascita">Regione di Nascita</label>
+          <select id="regione-di-nascita" name="regione-di-nascita">
+            <option selected></option>
+            <option>Abruzzo</option>
+            <option>Basilicata</option>
+            <option>Calabria</option>
+            <option>Campania</option>
+            <option>Emilia Romagna</option>
+            <option>Friuli Venezia Giulia</option>
+            <option>Lazio</option>
+            <option>Liguria</option>
+            <option>Lombardia</option>
+            <option>Marche</option>
+            <option>Molise</option>
+            <option>Piemonte</option>
+            <option>Puglia</option>
+            <option>Sardegna</option>
+            <option>Sicilia</option>
+            <option>Toscana</option>
+            <option>Trentino Alto Adige</option>
+            <option>Umbria</option>
+            <option>Valle d'Aosta</option>
+            <option>Veneto</option>
+          </select>
+        </section>
+        <section>
+          <label for="email">Email</label>
+          <input type="email" maxlength="30" id="email" name="email" />
+        </section>
+        <section>
+          <button type="submit" id="submit-button">Invio</button>
+          <button type="reset">Annulla</button>
+        </section>
+      </form>
+    </main>
+  </body>
+  <script src="./js/validation.js" type="text/javascript"></script>
+</html>
