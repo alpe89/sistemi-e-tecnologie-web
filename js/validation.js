@@ -31,8 +31,9 @@ buttonElement.addEventListener("click", function (e) {
  */
 function validateFormElement(element) {
   if (
-    element.value.length === 0 &&
-    !element.classList.contains("input-error")
+    element.value.length === 0 ||
+    (element.value === "gg/mm/aaaa" &&
+      !element.classList.contains("input-error"))
   ) {
     element.classList.add("input-error");
   }
